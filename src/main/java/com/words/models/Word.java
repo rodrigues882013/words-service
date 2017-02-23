@@ -1,25 +1,21 @@
 package com.words.models;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "word")
 public class Word {
-    @Id
-    @GeneratedValue
-    private Integer id;
 
+    @Id
     private String word;
 
-    public Word() {
-    }
+    public Word() {}
 
-    public Word(String word, Integer id) {
+    public Word(String word) {
+        super();
         this.word = word;
-        this.id = id;
     }
 
     public String getWord() {
@@ -30,19 +26,10 @@ public class Word {
         this.word = word;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
     @Override
     public String toString() {
         return "Word{" +
                 "word='" + word + '\'' +
-                ", id=" + id +
                 '}';
     }
 

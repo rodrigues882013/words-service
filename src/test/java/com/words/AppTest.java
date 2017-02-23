@@ -42,7 +42,7 @@ public class AppTest {
      */
     @Test
     public void testGetIt() {
-        String responseMsg = target.path("myresource").request().get(String.class);
-        assertEquals("Got it!", responseMsg);
+        String responseMsg = target.path("words").request().get(String.class);
+        assertEquals("List All Drivers", responseMsg);
     }
 }

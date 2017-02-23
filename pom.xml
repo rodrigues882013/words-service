@@ -82,9 +82,10 @@
             </plugin>
         </plugins>
 
-        <resources>
+        <!--<resources>
             <resource>src/main/resources</resource>
-        </resources>
+        </resources>-->
+
     </build>
 
     <properties>
