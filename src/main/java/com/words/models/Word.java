@@ -1,9 +1,18 @@
 package com.words.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "word")
 public class Word {
-    private String word;
+    @Id
+    @GeneratedValue
     private Integer id;
+
+    private String word;
 
     public Word() {
     }
